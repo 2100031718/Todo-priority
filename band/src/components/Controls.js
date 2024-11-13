@@ -6,7 +6,7 @@ const Controls = ({ grouping, setGrouping, sortOrder, setSortOrder }) => {
             <div className="grouping">
                 <label>Group By:</label>
                 <select value={grouping} onChange={(e) => setGrouping(e.target.value)}>
-                    <option value="status">Status</option>
+                    <option value="status">Status by surya</option>
                     <option value="priority">Priority</option>
                     <option value="user">User</option> {/* Add user option */}
                 </select>
