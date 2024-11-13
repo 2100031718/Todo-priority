@@ -1,0 +1,186 @@
+/* Basic App Styling */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1600px; /* Increased max-width for more width */
+  margin: 0 auto;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Loading and Error Messages */
+p {
+  color: #888;
+  text-align: center;
+}
+
+/* Controls for Grouping and Sorting */
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls-container select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Task Input and Add Task Button */
+.task-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-input-container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Priority Dropdown */
+.priority-dropdown {
+  margin-right: 10px;
+}
+
+/* Custom Status Selector */
+.task-status-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-icon-display {
+  margin-right: 8px;
+}
+
+.status-dropdown {
+  display: flex;
+  gap: 10px;
+}
+
+.status-option {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #333;
+}
+
+.status-option:hover {
+  background-color: #f0f0f0;
+}
+
+.status-option.selected {
+  font-weight: bold;
+  border-color: #007bff;
+  background-color: #e6f7ff;
+  color: #007bff;
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+/* Kanban Board Styling */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+}
+
+.kanban-column {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px; /* Keep this fixed or change it based on your layout */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Task Cards */
+.task-card {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.task-card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.task-priority {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Delete Task Button */
+.delete-task-button {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.delete-task-button:hover {
+  background-color: #d9363e;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .kanban-board {
+      flex-direction: column;
+  }
+
+  .controls-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

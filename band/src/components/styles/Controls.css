@@ -1,0 +1,34 @@
+.controls {
+  display: flex;
+  gap: 100px; /* Space between Group By and Sort By */
+  padding: 16px;
+  align-items: side; /* Ensures vertical centering */
+}
+
+.controls .grouping,
+.controls .sorting {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls label {
+  font-size: 1em; /* Adjusted font size */
+  margin-bottom: 5px; /* Space between label and select */
+}
+
+.controls select {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.9em;
+  width: 150px; /* Adjust the width as needed */
+}
+
+.controls button {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9em;
+}

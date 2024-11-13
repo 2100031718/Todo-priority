@@ -1,0 +1,49 @@
+.priority-dropdown {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+}
+
+.priority-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.priority-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+}
+
+.priority-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.priority-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.priority-option:hover {
+    background-color: #f0f0f0;
+}

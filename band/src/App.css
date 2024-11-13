@@ -1,0 +1,106 @@
+/* General styles for the app */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Controls styling */
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls select {
+  padding: 5px;
+}
+
+/* Kanban board styling */
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Kanban column styling */
+.kanban-column {
+  background-color: #ffffff;
+  border:5px solid #ccc;
+  border-radius: 100px;
+  margin: 0 10px;
+  padding: 10px;
+  flex: 1;
+}
+
+.kanban-column-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Ticket styling */
+.ticket {
+  background-color: #e7f3fe;
+  border: 1px solid #b9e0f7;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.ticket-description {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+/* Priority classes */
+.priority-low {
+  background-color: #dff0d8; /* Greenish */
+}
+
+.priority-medium {
+  background-color: #fcf8e3; /* Yellowish */
+}
+
+.priority-high {
+  background-color: #007bff; /* Reddish */
+}
+
+/* Button styling */
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
